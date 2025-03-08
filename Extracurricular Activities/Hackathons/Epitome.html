@@ -7,24 +7,25 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: auto; /* Allow the height to adjust based on content */
+            height: auto; /* Allow scrolling */
         }
         .pdf-container {
             width: 100%;
-            display: block; /* Stack iframes vertically */
+            display: block; /* Stack vertically */
         }
         iframe {
-            width: 100%; /* Full width for each PDF */
-            height: 100vh; /* Each iframe takes full viewport height */
-            border: none; /* Removes iframe border */
-            display: block; /* Ensures iframes stack properly */
+            width: 100%; /* Full width */
+            height: 80vh; /* 80% of viewport height for each PDF, adjustable */
+            border: none; /* No border */
+            display: block; /* Stack vertically */
+            margin-bottom: 20px; /* Space between PDFs */
         }
     </style>
 </head>
 <body>
     <div class="pdf-container">
         <iframe src="Epitome25Participation.pdf"></iframe>
-        <iframe src="certificates-1.pdf"></iframe> <!-- Replace with your second PDF file name -->
+        <iframe src="certificates-1.pdf"></iframe>
     </div>
 </body>
 </html>
